@@ -36,5 +36,4 @@ contract LMAOToken is ERC20, Ownable {
         super._transfer(sender, recipient, preciseAmount - feeAmount);
         return true;
     }
-
 }
