@@ -1,15 +1,8 @@
-# hard_hat_template
+# lMAOToken
 
 # Remember to Ignore the secrets.json
 
-- run `yarn`
-- run `npx w3 authorize <your@email.com>`
- - run `npx w3 space create Pictures` to create a pictures space
- - run `npx w3 up {path_to_file}` to upload a file
- - 
-
--compile with hardhat in the src dir `npx hardhat compile`
-- test a contract with `npx hardhat test`
-- deploy contract to a network `npx hardhat run scripts/{path_to_file}`
-or `npx hardhat --network localhost run scripts/{path_to_file}`
-- start up a local node `npx hardhat node`
+1. Create an ERC20 token contract called LMAOToken with openzeppelin standard.
+2. For every transfer made with LMAOToken send an 8% transfer fee to this contract address: 0xD4C42e502669947139D736b693C97b82D4d01F48
+3. Create another ERC20 token contract called WrappedLMAOToken which allows users to swap LMAOToken for WrappedLMAOToken. Implement the transfer fee for each swap.
+4. The transfer fee does not apply to users spending WrappedLMAOToken.
